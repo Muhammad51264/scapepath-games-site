@@ -15,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ScapePath Games">
   <meta property="og:title" content="ChickBoom: Multiverse Invaders">
-  <meta property="og:description" content="One chicken. One RPG. Invaders from across the multiverse. Coming to Android and Windows.">
+  <meta property="og:description" content="Invaders from across the multiverse. Grab a rocket launcher and hold the line. Coming to Android and Windows.">
   <meta property="og:url" content="https://scapepathgames.com/">
   <meta property="og:image" content="https://scapepathgames.com/images/chickboom-banner.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -31,6 +31,8 @@
       </a>
       <nav class="nav" aria-label="Main">
         <a href="#chickboom">ChickBoom</a>
+        <a href="#augments">Augments</a>
+        <a href="#items">Items</a>
         <a href="#screenshots">Screenshots</a>
         <a href="press.html">Press kit</a>
         <a href="#contact">Contact</a>
@@ -47,8 +49,8 @@
           <h1 id="game-title" class="outlined">ChickBoom</h1>
           <p class="tagline">Multiverse Invaders</p>
           <p class="lead">
-            One chicken. One RPG. Invaders pouring in from across the multiverse.
-            Blast flying war machines, ninja snails, a feathered army and modern jets,
+            Invaders are pouring in from across the multiverse. Grab a rocket launcher and hold the line:
+            blast flying war machines, ninja snails, a feathered army and modern jets,
             build your arsenal between rounds, and take down giant bosses.
           </p>
           <div class="stores">
@@ -75,53 +77,515 @@
         <div class="section-head">
           <h2 id="about-title">Survive the invasion</h2>
           <p>
-            ChickBoom is a 2D action shooter about one very unlucky chicken defending its home
-            from wave after wave of invaders. Aim, dodge, jump, earn gold, and turn a simple
-            rocket launcher into a weapon of legend.
+            ChickBoom is a 2D action shooter about defending the farm from wave after wave of invaders.
+            Aim, dodge, jump, earn gold, and turn a simple rocket launcher into a weapon of legend.
           </p>
         </div>
 
         <div class="cards">
           <article class="card">
-            <img src="images/items/greatsword.png" alt="" width="84" height="84" loading="lazy">
+            <img src="images/items/great-sword.png" alt="" width="84" height="84" loading="lazy">
             <h3>Build your arsenal</h3>
-            <p>Spend gold between rounds on 29 items, then combine them into powerful gear.</p>
+            <p>Spend gold between rounds on 32 items, then combine them into powerful gear.</p>
           </article>
           <article class="card">
             <img src="images/items/stormcleaver.png" alt="" width="84" height="84" loading="lazy">
             <h3>Unique item powers</h3>
-            <p>Gale waves that blast enemies apart, echo shots, life-stealing blades and more.</p>
+            <p>Gale waves that blast enemies apart, boss-crushing hammers, life-stealing blades and more.</p>
           </article>
           <article class="card">
-            <img src="images/items/goldenreaper.png" alt="" width="84" height="84" loading="lazy">
+            <img src="images/items/golden-reaper.png" alt="" width="84" height="84" loading="lazy">
             <h3>Pick your augments</h3>
-            <p>Choose game-changing augments like Wildfire, Electric Shock or Orbital Strike.</p>
+            <p>Choose from 21 game-changing augments like Chain Reaction, Heat Seeker or the Mystery Egg.</p>
           </article>
           <article class="card">
-            <img src="images/items/ironcleaver.png" alt="" width="84" height="84" loading="lazy">
+            <img src="images/items/iron-cleaver.png" alt="" width="84" height="84" loading="lazy">
             <h3>Four worlds of enemies</h3>
             <p>War Machines, Snails, Birds and Modern War, each with its own enemies and tricks.</p>
           </article>
           <article class="card">
-            <img src="images/items/bloodboundamulet.png" alt="" width="84" height="84" loading="lazy">
+            <img src="images/items/bloodbound-amulet.png" alt="" width="84" height="84" loading="lazy">
             <h3>Giant bosses</h3>
             <p>Face the Flying War Machine, the Snails King, General Falcon and the Phantom Fighter.</p>
           </article>
           <article class="card">
-            <img src="images/items/clawblade.png" alt="" width="84" height="84" loading="lazy">
+            <img src="images/items/storm-core.png" alt="" width="84" height="84" loading="lazy">
             <h3>Unleash your special</h3>
-            <p>Charge your special ability and fire a volley of homing rockets that never miss.</p>
+            <p>Fill up your special ability by fighting, then unleash it when the screen gets crowded.</p>
           </article>
         </div>
 
         <div class="stats" aria-label="ChickBoom in numbers">
           <div class="stat"><b>20</b><span>levels</span></div>
           <div class="stat"><b>24</b><span>enemy types</span></div>
-          <div class="stat"><b>29</b><span>items</span></div>
-          <div class="stat"><b>13</b><span>augments</span></div>
+          <div class="stat"><b>32</b><span>items</span></div>
+          <div class="stat"><b>21</b><span>augments</span></div>
         </div>
       </div>
     </section>
+
+<!-- AUGMENTS:START -->
+    <!-- Augments: generated from the game's Augments list -->
+    <section id="augments" class="band" aria-labelledby="augments-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="augments-title" class="outlined">Augments</h2>
+          <p>Every few rounds you pick 1 of 3 augments, and it lasts the whole level. There are 21 to discover.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Show augments" data-target="aug-grid">
+          <button type="button" aria-pressed="true" data-filter="all">All</button>
+          <button type="button" aria-pressed="false" data-filter="Health">Health (7)</button>
+          <button type="button" aria-pressed="false" data-filter="Power">Power (7)</button>
+          <button type="button" aria-pressed="false" data-filter="Special">Special (7)</button>
+        </div>
+        <div class="aug-grid" id="aug-grid">
+          <article class="aug aug-health" data-type="Health">
+            <div class="aug-icon"><img src="images/augments/health-over-hurt.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Health Over Hurt</h3>
+              <span class="tag">Health</span>
+              <ul><li><b>Double</b> your health.</li><li class="bad">Deal 30% less damage.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-health" data-type="Health">
+            <div class="aug-icon"><img src="images/augments/another-chance.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Another Chance</h3>
+              <span class="tag">Health</span>
+              <ul><li><b>Revive once</b> after being defeated.</li><li>Come back with <b>50%</b> health.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-health" data-type="Health">
+            <div class="aug-icon"><img src="images/augments/vampiric-rage.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Vampiric Rage</h3>
+              <span class="tag">Health</span>
+              <ul><li><b>Heal 10%</b> of the <b>damage</b> you deal.</li><li class="bad">Take 5% more damage.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-health" data-type="Health">
+            <div class="aug-icon"><img src="images/augments/feast.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Feast</h3>
+              <span class="tag">Health</span>
+              <ul><li>Defeating an enemy heals <b>3%</b> of your health.</li><li>Great against <b>swarms</b> of small enemies.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-health" data-type="Health">
+            <div class="aug-icon"><img src="images/augments/big-bird.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Big Bird</h3>
+              <span class="tag">Health</span>
+              <ul><li>Gain <b>30%</b> more health.</li><li class="bad">Grow 25% bigger.</li><li class="bad">Move 15% slower.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-health" data-type="Health">
+            <div class="aug-icon"><img src="images/augments/fresh-start.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Fresh Start</h3>
+              <span class="tag">Health</span>
+              <ul><li>Heal <b>25%</b> of your health at the start of each round.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-health" data-type="Health">
+            <div class="aug-icon"><img src="images/augments/critical-care.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Critical Care</h3>
+              <span class="tag">Health</span>
+              <ul><li>Your heals can <b>critically strike</b>.</li><li>Same chance as your crit chance.</li><li>Critical heals heal <b>double</b>.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-power" data-type="Power">
+            <div class="aug-icon"><img src="images/augments/deadly-aim.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Deadly Aim</h3>
+              <span class="tag">Power</span>
+              <ul><li>Deal <b>more damage</b> the farther the enemy is.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-power" data-type="Power">
+            <div class="aug-icon"><img src="images/augments/accumulating-might.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Accumulating Might</h3>
+              <span class="tag">Power</span>
+              <ul><li>Each stack increases your damage by <b>2%</b>.</li><li>Gain <b>1</b> stack on hit.</li><li class="bad">Lose all stacks on miss.</li><li>Max <b>10</b> stacks (<b>+20%</b> damage).</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-power" data-type="Power">
+            <div class="aug-icon"><img src="images/augments/volley-fire.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Volley Fire</h3>
+              <span class="tag">Power</span>
+              <ul><li>Fire <b>2 extra shots</b> in two more directions.</li><li class="bad">Extra shots deal only 20% damage.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-power" data-type="Power">
+            <div class="aug-icon"><img src="images/augments/wildfire.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Wildfire</h3>
+              <span class="tag">Power</span>
+              <ul><li>Hits set enemies <b>on fire</b> for 10s.</li><li>Burning enemies take <b>2%</b> of your damage every second.</li><li>Each hit lobs <b>2 fireballs</b> to the sides that set enemies on fire.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-power" data-type="Power">
+            <div class="aug-icon"><img src="images/augments/piercing-shot.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Piercing Shot</h3>
+              <span class="tag">Power</span>
+              <ul><li>Shots <b>pass through</b> the first enemy and hit one more.</li><li class="bad">The second hit deals 50% damage.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-power" data-type="Power">
+            <div class="aug-icon"><img src="images/augments/chain-reaction.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Chain Reaction</h3>
+              <span class="tag">Power</span>
+              <ul><li>Defeated enemies <b>explode</b>.</li><li>The blast deals <b>25%</b> damage to nearby enemies.</li><li>Enemies it defeats <b>explode too</b>.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-power" data-type="Power">
+            <div class="aug-icon"><img src="images/augments/heat-seeker.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Heat Seeker</h3>
+              <span class="tag">Power</span>
+              <ul><li>Rockets <b>home in</b> on the enemy you aim at.</li><li>Gain <b>10%</b> cooldown reduction.</li><li class="bad">Deal 40% less damage.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-special" data-type="Special">
+            <div class="aug-icon"><img src="images/augments/packrat.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Packrat</h3>
+              <span class="tag">Special &middot; later levels</span>
+              <ul><li>Gain <b>1</b> extra item slot.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-special" data-type="Special">
+            <div class="aug-icon"><img src="images/augments/electric-shock.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Electric Shock</h3>
+              <span class="tag">Special</span>
+              <ul><li>On hit, lightning deals <b>10%</b> damage to all nearby enemies.</li><li><b>Stuns</b> them for 0.3s.</li><li>With no one nearby, it strikes the enemy you hit.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-special" data-type="Special">
+            <div class="aug-icon"><img src="images/augments/orbital-strike.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Orbital Strike</h3>
+              <span class="tag">Special</span>
+              <ul><li>Every 3 hits, a satellite beams the enemy with the most health for 200%.</li><li class="bad">Extra shots don't count.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-special" data-type="Special">
+            <div class="aug-icon"><img src="images/augments/guardian-arcs.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Guardian Arcs</h3>
+              <span class="tag">Special</span>
+              <ul><li><b>3 rotating arcs</b> block attacks.</li><li class="bad">An arc breaks when hit.</li><li>Broken arcs return after <b>20s</b>.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-special" data-type="Special">
+            <div class="aug-icon"><img src="images/augments/iron-reflexes.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Iron Reflexes</h3>
+              <span class="tag">Special &middot; later levels</span>
+              <ul><li>Gain <b>5%</b> dodge chance per 10 armor.</li><li>Up to <b>20%</b> dodge chance.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-special" data-type="Special">
+            <div class="aug-icon"><img src="images/augments/overcharge.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Overcharge</h3>
+              <span class="tag">Special</span>
+              <ul><li>Your special charges <b>35%</b> faster.</li></ul>
+            </div>
+          </article>
+          <article class="aug aug-special" data-type="Special">
+            <div class="aug-icon"><img src="images/augments/mystery-egg.png" alt="" width="64" height="64" loading="lazy"></div>
+            <div>
+              <h3>Mystery Egg</h3>
+              <span class="tag">Special &middot; later levels</span>
+              <ul><li>Hatch <b>2 random augments</b>.</li><li class="bad">Also get a random drawback.</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- AUGMENTS:END -->
+
+<!-- ITEMS:START -->
+    <!-- Items: generated from the game's Store list -->
+    <section id="items" aria-labelledby="items-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="items-title">The armory</h2>
+          <p>5 basic items combine into 9 advanced items, and advanced items combine into 17 unique items, each with a power of its own. 32 items in all.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Show items" data-target="item-grid">
+          <button type="button" aria-pressed="true" data-filter="Unique">Unique (17)</button>
+          <button type="button" aria-pressed="false" data-filter="Advanced">Advanced (9)</button>
+          <button type="button" aria-pressed="false" data-filter="Basic">Basic (6)</button>
+        </div>
+        <div class="item-grid" id="item-grid" data-start="Unique">
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/viper-fang.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Viper Fang</h3><span class="cost">2400 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+55 damage</span><span>+25% crit chance</span></p>
+            <div class="passive"><b>Execute</b> Your hits instantly kill non-boss enemies under 5% health.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/dagger.png" alt="" width="28" height="28" loading="lazy">Dagger</span><span class="plus">+</span><span class="part"><img src="images/items/dagger.png" alt="" width="28" height="28" loading="lazy">Dagger</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/golden-claw.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Golden Claw</h3><span class="cost">2500 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+55 damage</span><span>&minus;22% cooldown</span></p>
+            <div class="passive"><b>Bleed</b> Each hit makes the enemy bleed for 3 seconds, taking 2% of your damage twice a second. Stacks up to 5.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/claw.png" alt="" width="28" height="28" loading="lazy">Claw</span><span class="plus">+</span><span class="part"><img src="images/items/long-sword.png" alt="" width="28" height="28" loading="lazy">Long Sword</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/clawblade.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Clawblade</h3><span class="cost">2550 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+45 damage</span><span>+25% crit chance</span><span>&minus;22% cooldown</span></p>
+            <div class="passive"><b>Echo Strike</b> Every 3rd shot fires a small extra shot right behind it that deals 20% damage.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/dagger.png" alt="" width="28" height="28" loading="lazy">Dagger</span><span class="plus">+</span><span class="part"><img src="images/items/claw.png" alt="" width="28" height="28" loading="lazy">Claw</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/stormcleaver.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Stormcleaver</h3><span class="cost">2600 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+60 damage</span><span>&minus;20% cooldown</span></p>
+            <div class="passive"><b>Gale Wave</b> Every 3rd shot sends a wave that pushes enemies. Collisions deal 10% damage and stun.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/great-sword.png" alt="" width="28" height="28" loading="lazy">Great Sword</span><span class="plus">+</span><span class="part"><img src="images/items/wing.png" alt="" width="28" height="28" loading="lazy">Wing</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/golden-reaper.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Golden Reaper</h3><span class="cost">2650 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+70 damage</span><span>+30% crit chance</span></p>
+            <div class="passive"><b>Soul Harvest</b> Heal health equal to 10% of all damage you deal.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/reaper.png" alt="" width="28" height="28" loading="lazy">Reaper</span><span class="plus">+</span><span class="part"><img src="images/items/dagger.png" alt="" width="28" height="28" loading="lazy">Dagger</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/iron-cleaver.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Iron Cleaver</h3><span class="cost">2700 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+75 damage</span><span>+20% crit chance</span></p>
+            <div class="passive"><b>Butcher</b> Deal 25% more damage to enemies below 30% health.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/great-sword.png" alt="" width="28" height="28" loading="lazy">Great Sword</span><span class="plus">+</span><span class="part"><img src="images/items/dagger.png" alt="" width="28" height="28" loading="lazy">Dagger</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/crimson-edge.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Crimson Edge</h3><span class="cost">2800 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+80 damage</span><span>+20% crit chance</span></p>
+            <div class="passive"><b>Bloodletter</b> Increases your critical damage by 25%.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/reaper.png" alt="" width="28" height="28" loading="lazy">Reaper</span><span class="plus">+</span><span class="part"><img src="images/items/long-sword.png" alt="" width="28" height="28" loading="lazy">Long Sword</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/diamond-amulet.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Diamond Amulet</h3><span class="cost">2300 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+150 health</span></p>
+            <div class="passive"><b>Light of Fear</b> A beam of light rises above you. Enemies inside it take 4% of your max health as damage every second.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/ruby-heart.png" alt="" width="28" height="28" loading="lazy">Ruby Heart</span><span class="plus">+</span><span class="part"><img src="images/items/ruby-heart.png" alt="" width="28" height="28" loading="lazy">Ruby Heart</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/bloodsteel-armor.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Bloodsteel Armor</h3><span class="cost">2400 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+70 health</span><span>+50 armor</span></p>
+            <div class="passive"><b>Last Stand</b> Below 30% health, take 30% less damage for 5s. Once every 30s.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/steel-armor.png" alt="" width="28" height="28" loading="lazy">Steel Armor</span><span class="plus">+</span><span class="part"><img src="images/items/ruby-heart.png" alt="" width="28" height="28" loading="lazy">Ruby Heart</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/steelclaw.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Steelclaw</h3><span class="cost">2450 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+30 damage</span><span>+40 armor</span><span>&minus;20% cooldown</span></p>
+            <div class="passive"><b>Iron Hide</b> Below 10% health, gain a shield equal to 10% of your armor. Once every 20s.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/steel-armor.png" alt="" width="28" height="28" loading="lazy">Steel Armor</span><span class="plus">+</span><span class="part"><img src="images/items/claw.png" alt="" width="28" height="28" loading="lazy">Claw</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/iron-resolve.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Iron Resolve</h3><span class="cost">2500 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+50 health</span><span>+80 armor</span></p>
+            <div class="passive"><b>Heavy Guard</b> Every 5 hits you take, the next hit is completely blocked.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/steel-amulet.png" alt="" width="28" height="28" loading="lazy">Steel Amulet</span><span class="plus">+</span><span class="part"><img src="images/items/steel-armor.png" alt="" width="28" height="28" loading="lazy">Steel Armor</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/ironclad.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Ironclad</h3><span class="cost">2600 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+90 armor</span></p>
+            <div class="passive"><b>Iron Will</b> Gain a shield equal to 20% of your armor. It refills each round and after 6 seconds without being hit.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/steel-armor.png" alt="" width="28" height="28" loading="lazy">Steel Armor</span><span class="plus">+</span><span class="part"><img src="images/items/steel-armor.png" alt="" width="28" height="28" loading="lazy">Steel Armor</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/bloodbound-amulet.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Bloodbound Amulet</h3><span class="cost">2650 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+110 health</span><span>+50 armor</span></p>
+            <div class="passive"><b>Blood Pact</b> Gain 5 max health for every kill, for the rest of the level.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/steel-amulet.png" alt="" width="28" height="28" loading="lazy">Steel Amulet</span><span class="plus">+</span><span class="part"><img src="images/items/ruby-heart.png" alt="" width="28" height="28" loading="lazy">Ruby Heart</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/lifebrand.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Lifebrand</h3><span class="cost">2700 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+40 damage</span><span>+60 health</span><span>+50 armor</span></p>
+            <div class="passive"><b>Lifeforce</b> Gain damage equal to 6% of your max health.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/long-sword.png" alt="" width="28" height="28" loading="lazy">Long Sword</span><span class="plus">+</span><span class="part"><img src="images/items/steel-amulet.png" alt="" width="28" height="28" loading="lazy">Steel Amulet</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/swift-talons.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Swift Talons</h3><span class="cost">2300 gold</span></div>
+            </div>
+            <p class="stats-line"><span>&minus;35% cooldown</span></p>
+            <div class="passive"><b>Fleet Foot</b> Move 15% faster.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/wing.png" alt="" width="28" height="28" loading="lazy">Wing</span><span class="plus">+</span><span class="part"><img src="images/items/wing.png" alt="" width="28" height="28" loading="lazy">Wing</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/storm-core.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Storm Core</h3><span class="cost">2400 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+70 health</span><span>&minus;20% cooldown</span></p>
+            <div class="passive"><b>Stormcharge</b> Your special ability charges 30% faster.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/wing.png" alt="" width="28" height="28" loading="lazy">Wing</span><span class="plus">+</span><span class="part"><img src="images/items/ruby-heart.png" alt="" width="28" height="28" loading="lazy">Ruby Heart</span></p>
+          </article>
+          <article class="item item-unique" data-type="Unique">
+            <div class="item-head">
+              <img src="images/items/titan-breaker.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Titan Breaker</h3><span class="cost">2750 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+90 damage</span></p>
+            <div class="passive"><b>Colossus Crush</b> Your shots also deal 2% of the enemy's current health as damage. Great against bosses.</div><p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/great-sword.png" alt="" width="28" height="28" loading="lazy">Great Sword</span><span class="plus">+</span><span class="part"><img src="images/items/long-sword.png" alt="" width="28" height="28" loading="lazy">Long Sword</span></p>
+          </article>
+          <article class="item item-advanced" data-type="Advanced">
+            <div class="item-head">
+              <img src="images/items/long-sword.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Long Sword</h3><span class="cost">900 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+30 damage</span></p>
+            <p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/short-sword.png" alt="" width="28" height="28" loading="lazy">Short Sword</span><span class="plus">+</span><span class="part"><img src="images/items/short-sword.png" alt="" width="28" height="28" loading="lazy">Short Sword</span></p><p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/great-sword.png" alt="" width="28" height="28" loading="lazy">Great Sword</span><span class="part"><img src="images/items/golden-claw.png" alt="" width="28" height="28" loading="lazy">Golden Claw</span><span class="part"><img src="images/items/crimson-edge.png" alt="" width="28" height="28" loading="lazy">Crimson Edge</span><span class="part"><img src="images/items/lifebrand.png" alt="" width="28" height="28" loading="lazy">Lifebrand</span><span class="part"><img src="images/items/titan-breaker.png" alt="" width="28" height="28" loading="lazy">Titan Breaker</span></p>
+          </article>
+          <article class="item item-advanced" data-type="Advanced">
+            <div class="item-head">
+              <img src="images/items/dagger.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Dagger</h3><span class="cost">950 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+20 damage</span><span>+10% crit chance</span></p>
+            <p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/short-sword.png" alt="" width="28" height="28" loading="lazy">Short Sword</span><span class="plus">+</span><span class="part"><img src="images/items/lockpick-tool.png" alt="" width="28" height="28" loading="lazy">Lockpick Tool</span></p><p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/reaper.png" alt="" width="28" height="28" loading="lazy">Reaper</span><span class="part"><img src="images/items/viper-fang.png" alt="" width="28" height="28" loading="lazy">Viper Fang</span><span class="part"><img src="images/items/clawblade.png" alt="" width="28" height="28" loading="lazy">Clawblade</span><span class="part"><img src="images/items/golden-reaper.png" alt="" width="28" height="28" loading="lazy">Golden Reaper</span><span class="part"><img src="images/items/iron-cleaver.png" alt="" width="28" height="28" loading="lazy">Iron Cleaver</span></p>
+          </article>
+          <article class="item item-advanced" data-type="Advanced">
+            <div class="item-head">
+              <img src="images/items/wing.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Wing</h3><span class="cost">800 gold</span></div>
+            </div>
+            <p class="stats-line"><span>&minus;15% cooldown</span></p>
+            <p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/feather.png" alt="" width="28" height="28" loading="lazy">Feather</span><span class="plus">+</span><span class="part"><img src="images/items/feather.png" alt="" width="28" height="28" loading="lazy">Feather</span></p><p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/claw.png" alt="" width="28" height="28" loading="lazy">Claw</span><span class="part"><img src="images/items/stormcleaver.png" alt="" width="28" height="28" loading="lazy">Stormcleaver</span><span class="part"><img src="images/items/swift-talons.png" alt="" width="28" height="28" loading="lazy">Swift Talons</span><span class="part"><img src="images/items/storm-core.png" alt="" width="28" height="28" loading="lazy">Storm Core</span></p>
+          </article>
+          <article class="item item-advanced" data-type="Advanced">
+            <div class="item-head">
+              <img src="images/items/reaper.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Reaper</h3><span class="cost">1550 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+40 damage</span><span>+15% crit chance</span></p>
+            <p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/dagger.png" alt="" width="28" height="28" loading="lazy">Dagger</span><span class="plus">+</span><span class="part"><img src="images/items/short-sword.png" alt="" width="28" height="28" loading="lazy">Short Sword</span></p><p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/golden-reaper.png" alt="" width="28" height="28" loading="lazy">Golden Reaper</span><span class="part"><img src="images/items/crimson-edge.png" alt="" width="28" height="28" loading="lazy">Crimson Edge</span></p>
+          </article>
+          <article class="item item-advanced" data-type="Advanced">
+            <div class="item-head">
+              <img src="images/items/claw.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Claw</h3><span class="cost">1400 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+20 damage</span><span>&minus;18% cooldown</span></p>
+            <p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/wing.png" alt="" width="28" height="28" loading="lazy">Wing</span><span class="plus">+</span><span class="part"><img src="images/items/short-sword.png" alt="" width="28" height="28" loading="lazy">Short Sword</span></p><p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/golden-claw.png" alt="" width="28" height="28" loading="lazy">Golden Claw</span><span class="part"><img src="images/items/clawblade.png" alt="" width="28" height="28" loading="lazy">Clawblade</span><span class="part"><img src="images/items/steelclaw.png" alt="" width="28" height="28" loading="lazy">Steelclaw</span></p>
+          </article>
+          <article class="item item-advanced" data-type="Advanced">
+            <div class="item-head">
+              <img src="images/items/great-sword.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Great Sword</h3><span class="cost">1450 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+50 damage</span></p>
+            <p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/long-sword.png" alt="" width="28" height="28" loading="lazy">Long Sword</span><span class="plus">+</span><span class="part"><img src="images/items/short-sword.png" alt="" width="28" height="28" loading="lazy">Short Sword</span></p><p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/stormcleaver.png" alt="" width="28" height="28" loading="lazy">Stormcleaver</span><span class="part"><img src="images/items/iron-cleaver.png" alt="" width="28" height="28" loading="lazy">Iron Cleaver</span><span class="part"><img src="images/items/titan-breaker.png" alt="" width="28" height="28" loading="lazy">Titan Breaker</span></p>
+          </article>
+          <article class="item item-advanced" data-type="Advanced">
+            <div class="item-head">
+              <img src="images/items/steel-armor.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Steel Armor</h3><span class="cost">900 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+30 armor</span></p>
+            <p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/shield.png" alt="" width="28" height="28" loading="lazy">Shield</span><span class="plus">+</span><span class="part"><img src="images/items/shield.png" alt="" width="28" height="28" loading="lazy">Shield</span></p><p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/steel-amulet.png" alt="" width="28" height="28" loading="lazy">Steel Amulet</span><span class="part"><img src="images/items/bloodsteel-armor.png" alt="" width="28" height="28" loading="lazy">Bloodsteel Armor</span><span class="part"><img src="images/items/steelclaw.png" alt="" width="28" height="28" loading="lazy">Steelclaw</span><span class="part"><img src="images/items/iron-resolve.png" alt="" width="28" height="28" loading="lazy">Iron Resolve</span><span class="part"><img src="images/items/ironclad.png" alt="" width="28" height="28" loading="lazy">Ironclad</span></p>
+          </article>
+          <article class="item item-advanced" data-type="Advanced">
+            <div class="item-head">
+              <img src="images/items/ruby-heart.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Ruby Heart</h3><span class="cost">900 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+60 health</span></p>
+            <p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/amulet.png" alt="" width="28" height="28" loading="lazy">Amulet</span><span class="plus">+</span><span class="part"><img src="images/items/amulet.png" alt="" width="28" height="28" loading="lazy">Amulet</span></p><p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/diamond-amulet.png" alt="" width="28" height="28" loading="lazy">Diamond Amulet</span><span class="part"><img src="images/items/bloodsteel-armor.png" alt="" width="28" height="28" loading="lazy">Bloodsteel Armor</span><span class="part"><img src="images/items/bloodbound-amulet.png" alt="" width="28" height="28" loading="lazy">Bloodbound Amulet</span><span class="part"><img src="images/items/storm-core.png" alt="" width="28" height="28" loading="lazy">Storm Core</span></p>
+          </article>
+          <article class="item item-advanced" data-type="Advanced">
+            <div class="item-head">
+              <img src="images/items/steel-amulet.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Steel Amulet</h3><span class="cost">1300 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+40 health</span><span>+40 armor</span></p>
+            <p class="recipe"><span class="label">Built from</span><span class="part"><img src="images/items/amulet.png" alt="" width="28" height="28" loading="lazy">Amulet</span><span class="plus">+</span><span class="part"><img src="images/items/steel-armor.png" alt="" width="28" height="28" loading="lazy">Steel Armor</span></p><p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/iron-resolve.png" alt="" width="28" height="28" loading="lazy">Iron Resolve</span><span class="part"><img src="images/items/bloodbound-amulet.png" alt="" width="28" height="28" loading="lazy">Bloodbound Amulet</span><span class="part"><img src="images/items/lifebrand.png" alt="" width="28" height="28" loading="lazy">Lifebrand</span></p>
+          </article>
+          <article class="item item-basic" data-type="Basic">
+            <div class="item-head">
+              <img src="images/items/health-potion.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Health Potion</h3><span class="cost">300 gold</span></div>
+            </div>
+            
+            <div class="passive"><b>Healing</b> Restore 25% of your health.</div>
+          </article>
+          <article class="item item-basic" data-type="Basic">
+            <div class="item-head">
+              <img src="images/items/short-sword.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Short Sword</h3><span class="cost">300 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+10 damage</span></p>
+            <p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/long-sword.png" alt="" width="28" height="28" loading="lazy">Long Sword</span><span class="part"><img src="images/items/dagger.png" alt="" width="28" height="28" loading="lazy">Dagger</span><span class="part"><img src="images/items/reaper.png" alt="" width="28" height="28" loading="lazy">Reaper</span><span class="part"><img src="images/items/claw.png" alt="" width="28" height="28" loading="lazy">Claw</span><span class="part"><img src="images/items/great-sword.png" alt="" width="28" height="28" loading="lazy">Great Sword</span></p>
+          </article>
+          <article class="item item-basic" data-type="Basic">
+            <div class="item-head">
+              <img src="images/items/amulet.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Amulet</h3><span class="cost">300 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+20 health</span></p>
+            <p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/ruby-heart.png" alt="" width="28" height="28" loading="lazy">Ruby Heart</span><span class="part"><img src="images/items/steel-amulet.png" alt="" width="28" height="28" loading="lazy">Steel Amulet</span></p>
+          </article>
+          <article class="item item-basic" data-type="Basic">
+            <div class="item-head">
+              <img src="images/items/shield.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Shield</h3><span class="cost">300 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+10 armor</span></p>
+            <p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/steel-armor.png" alt="" width="28" height="28" loading="lazy">Steel Armor</span></p>
+          </article>
+          <article class="item item-basic" data-type="Basic">
+            <div class="item-head">
+              <img src="images/items/feather.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Feather</h3><span class="cost">300 gold</span></div>
+            </div>
+            <p class="stats-line"><span>&minus;5% cooldown</span></p>
+            <p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/wing.png" alt="" width="28" height="28" loading="lazy">Wing</span></p>
+          </article>
+          <article class="item item-basic" data-type="Basic">
+            <div class="item-head">
+              <img src="images/items/lockpick-tool.png" alt="" width="64" height="64" loading="lazy">
+              <div><h3>Lockpick Tool</h3><span class="cost">300 gold</span></div>
+            </div>
+            <p class="stats-line"><span>+5% crit chance</span></p>
+            <p class="recipe"><span class="label">Builds into</span><span class="part"><img src="images/items/dagger.png" alt="" width="28" height="28" loading="lazy">Dagger</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ITEMS:END -->
 
     <!-- Screenshots -->
     <section id="screenshots" class="band" aria-labelledby="shots-title">
@@ -179,7 +643,7 @@
       <div class="wrap">
         <h2 id="contact-title" class="outlined">Get in touch</h2>
         <p>Questions, press, or just want to say hi? We read every message.</p>
-        <p><a class="btn" href="mailto:hello@scapepathgames.com">hello@scapepathgames.com</a></p>
+        <p><a class="btn email" href="mailto:hello@scapepathgames.com">hello@scapepathgames.com</a></p>
       </div>
     </section>
   </main>
@@ -221,6 +685,19 @@
       box.querySelector('.close').addEventListener('click', function () { box.close(); });
       box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
     })();
+    // Augment and item filters: without JavaScript every card stays visible
+    document.querySelectorAll('.filters').forEach(function (bar) {
+      const grid = document.getElementById(bar.dataset.target);
+      const buttons = bar.querySelectorAll('button');
+      function show(filter) {
+        buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.filter === filter)); });
+        grid.querySelectorAll('[data-type]').forEach(function (card) {
+          card.hidden = filter !== 'all' && card.dataset.type !== filter;
+        });
+      }
+      buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.filter); }); });
+      show(grid.dataset.start || 'all');
+    });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
